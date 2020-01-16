@@ -1,0 +1,936 @@
+Listing : buildhouse1.txt
+Time: 0
+				Starting: 5
+   Current staff: 2
+
+Time: 4
+				Finished: 5
+				Starting: 1
+				Starting: 6
+   Current staff: 4
+
+Time: 6
+				Finished: 6
+   Current staff: 2
+
+Time: 8
+				Finished: 1
+				Starting: 2
+   Current staff: 4
+
+Time: 14
+				Finished: 2
+				Starting: 3
+				Starting: 4
+				Starting: 7
+   Current staff: 7
+
+Time: 15
+				Finished: 3
+				Finished: 4
+   Current staff: 2
+
+Time: 18
+				Finished: 7
+				Starting: 8
+   Current staff: 4
+
+Time: 22
+				Finished: 8
+   Current staff: 0
+
+**** Shortest possible project execution is 22 ****
+
+ID:1 Name:Build-walls
+Time:4
+Manpower:2
+Es:4 Ef:8
+Ls:4 Lf:8
+Slack:0
+Out edges:[2, 3]
+
+
+ID:2 Name:Build-roofs
+Time:6
+Manpower:4
+Es:8 Ef:14
+Ls:8 Lf:14
+Slack:0
+Out edges:[3, 4, 7]
+
+
+ID:3 Name:Put-on-wallpapers
+Time:1
+Manpower:2
+Es:14 Ef:15
+Ls:17 Lf:18
+Slack:3
+Out edges:[8]
+
+
+ID:4 Name:Put-on-tiles
+Time:1
+Manpower:3
+Es:14 Ef:15
+Ls:21 Lf:22
+Slack:7
+Out edges:[]
+
+
+ID:5 Name:Build-foundation
+Time:4
+Manpower:2
+Es:0 Ef:4
+Ls:0 Lf:4
+Slack:0
+Out edges:[1, 6]
+
+
+ID:6 Name:Make-floor
+Time:2
+Manpower:2
+Es:4 Ef:6
+Ls:12 Lf:14
+Slack:8
+Out edges:[7]
+
+
+ID:7 Name:Put-carpet-floor
+Time:4
+Manpower:2
+Es:14 Ef:18
+Ls:14 Lf:18
+Slack:0
+Out edges:[8]
+
+
+ID:8 Name:Move-in
+Time:4
+Manpower:4
+Es:18 Ef:22
+Ls:18 Lf:22
+Slack:0
+Out edges:[]
+
+
+Listing : buildhouse2.txt
+
+CYCLE FOUND: [1, 2, 6, 7, 1]
+
+ID:1 Name:Build-walls
+Time:4
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[2, 3]
+
+
+ID:2 Name:Build-roofs
+Time:6
+Manpower:4
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[3, 4, 7]
+
+
+ID:3 Name:Put-on-wallpapers
+Time:1
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[8]
+
+
+ID:4 Name:Put-on-tiles
+Time:1
+Manpower:3
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[]
+
+
+ID:5 Name:Build-foundation
+Time:4
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[1]
+
+
+ID:6 Name:Make-floor
+Time:2
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[1]
+
+
+ID:7 Name:Put-carpet-floor
+Time:4
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[6, 8]
+
+
+ID:8 Name:Move-in
+Time:4
+Manpower:4
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[]
+
+
+Listing : examplefigure.txt
+Time: 0
+				Starting: 1
+				Starting: 2
+   Current staff: 6
+
+Time: 3
+				Finished: 1
+   Current staff: 2
+
+Time: 5
+				Finished: 2
+				Starting: 4
+				Starting: 3
+   Current staff: 6
+
+Time: 6
+				Finished: 3
+				Starting: 5
+   Current staff: 7
+
+Time: 7
+				Finished: 4
+				Starting: 6
+   Current staff: 7
+
+Time: 10
+				Finished: 5
+   Current staff: 4
+
+Time: 15
+				Finished: 6
+				Starting: 8
+				Starting: 7
+   Current staff: 5
+
+Time: 16
+				Finished: 8
+   Current staff: 2
+
+**** Shortest possible project execution is 16 ****
+
+ID:1 Name:1
+Time:3
+Manpower:4
+Es:0 Ef:3
+Ls:0 Lf:3
+Slack:0
+Out edges:[3]
+
+
+ID:2 Name:2
+Time:5
+Manpower:2
+Es:0 Ef:5
+Ls:0 Lf:5
+Slack:0
+Out edges:[3, 4]
+
+
+ID:3 Name:3
+Time:1
+Manpower:2
+Es:5 Ef:6
+Ls:6 Lf:7
+Slack:1
+Out edges:[5, 6]
+
+
+ID:4 Name:4
+Time:2
+Manpower:4
+Es:5 Ef:7
+Ls:5 Lf:7
+Slack:0
+Out edges:[6]
+
+
+ID:5 Name:5
+Time:4
+Manpower:3
+Es:6 Ef:10
+Ls:9 Lf:13
+Slack:3
+Out edges:[7]
+
+
+ID:6 Name:6
+Time:8
+Manpower:4
+Es:7 Ef:15
+Ls:7 Lf:15
+Slack:0
+Out edges:[7, 8]
+
+
+ID:7 Name:7
+Time:3
+Manpower:2
+Es:15 Ef:18
+Ls:13 Lf:16
+Slack:-2
+Out edges:[]
+
+
+ID:8 Name:8
+Time:1
+Manpower:3
+Es:15 Ef:16
+Ls:15 Lf:16
+Slack:0
+Out edges:[]
+
+
+Listing : buildgarage.txt
+Time: 0
+				Starting: 1
+   Current staff: 1
+
+Time: 14280
+				Finished: 1
+				Starting: 2
+				Starting: 3
+   Current staff: 4
+
+Time: 14284
+				Finished: 2
+   Current staff: 3
+
+Time: 230182
+				Finished: 3
+				Starting: 4
+   Current staff: 2
+
+Time: 262316
+				Finished: 4
+				Starting: 5
+				Starting: 6
+				Starting: 7
+   Current staff: 6
+
+Time: 262331
+				Finished: 7
+   Current staff: 5
+
+Time: 262458
+				Finished: 6
+   Current staff: 4
+
+Time: 303548
+				Finished: 5
+				Starting: 9
+				Starting: 11
+   Current staff: 6
+
+Time: 307873
+				Finished: 11
+				Starting: 12
+   Current staff: 8
+
+Time: 309675
+				Finished: 9
+				Starting: 10
+   Current staff: 7
+
+Time: 363997
+				Finished: 10
+				Starting: 8
+   Current staff: 6
+
+Time: 405242
+				Finished: 8
+   Current staff: 4
+
+Time: 429351
+				Finished: 12
+				Starting: 13
+   Current staff: 3
+
+Time: 430593
+				Finished: 13
+				Starting: 14
+   Current staff: 2
+
+Time: 484913
+				Finished: 14
+   Current staff: 0
+
+**** Shortest possible project execution is 484913 ****
+
+ID:1 Name:get-paperwork
+Time:14280
+Manpower:1
+Es:0 Ef:14280
+Ls:0 Lf:14280
+Slack:0
+Out edges:[2, 3]
+
+
+ID:2 Name:call-contractor
+Time:4
+Manpower:1
+Es:14280 Ef:14284
+Ls:349854 Lf:349858
+Slack:335574
+Out edges:[4]
+
+
+ID:3 Name:clean-yard
+Time:215902
+Manpower:3
+Es:14280 Ef:230182
+Ls:133956 Lf:349858
+Slack:119676
+Out edges:[4]
+
+
+ID:4 Name:build-foundation
+Time:32134
+Manpower:2
+Es:230182 Ef:262316
+Ls:349858 Lf:381992
+Slack:119676
+Out edges:[5, 6, 7]
+
+
+ID:5 Name:build-wall-support
+Time:41232
+Manpower:4
+Es:262316 Ef:303548
+Ls:381992 Lf:423224
+Slack:119676
+Out edges:[8, 9, 11]
+
+
+ID:6 Name:lay-electrical-cables
+Time:142
+Manpower:1
+Es:262316 Ef:262458
+Ls:484771 Lf:484913
+Slack:222455
+Out edges:[]
+
+
+ID:7 Name:call-electrician
+Time:15
+Manpower:1
+Es:262316 Ef:262331
+Ls:443653 Lf:443668
+Slack:181337
+Out edges:[8]
+
+
+ID:8 Name:install-electrical-gate-opener
+Time:41245
+Manpower:2
+Es:363997 Ef:405242
+Ls:443668 Lf:484913
+Slack:79671
+Out edges:[]
+
+
+ID:9 Name:build-walls
+Time:6127
+Manpower:4
+Es:303548 Ef:309675
+Ls:423224 Lf:429351
+Slack:119676
+Out edges:[10, 13]
+
+
+ID:10 Name:add-gate
+Time:54322
+Manpower:3
+Es:309675 Ef:363997
+Ls:389346 Lf:443668
+Slack:79671
+Out edges:[8]
+
+
+ID:11 Name:build-stairs
+Time:4325
+Manpower:2
+Es:303548 Ef:307873
+Ls:303548 Lf:307873
+Slack:0
+Out edges:[12]
+
+
+ID:12 Name:add-2nd-floor
+Time:121478
+Manpower:4
+Es:307873 Ef:429351
+Ls:307873 Lf:429351
+Slack:0
+Out edges:[13]
+
+
+ID:13 Name:isolate-room
+Time:1242
+Manpower:3
+Es:429351 Ef:430593
+Ls:429351 Lf:430593
+Slack:0
+Out edges:[14]
+
+
+ID:14 Name:furnish-appartment
+Time:54320
+Manpower:2
+Es:430593 Ef:484913
+Ls:430593 Lf:484913
+Slack:0
+Out edges:[]
+
+
+Listing : buildrail.txt
+Time: 0
+				Starting: 9
+   Current staff: 10
+
+Time: 3
+				Finished: 9
+				Starting: 10
+				Starting: 11
+				Starting: 12
+				Starting: 14
+				Starting: 16
+				Starting: 17
+   Current staff: 56
+
+Time: 4
+				Finished: 11
+				Starting: 18
+				Starting: 19
+				Starting: 20
+   Current staff: 64
+
+Time: 5
+				Finished: 10
+				Starting: 2
+   Current staff: 70
+
+Time: 12
+				Finished: 2
+   Current staff: 60
+
+Time: 16
+				Finished: 20
+				Starting: 23
+   Current staff: 61
+
+Time: 28
+				Finished: 14
+				Starting: 15
+   Current staff: 61
+
+Time: 29
+				Finished: 19
+   Current staff: 57
+
+Time: 33
+				Finished: 12
+				Starting: 13
+   Current staff: 57
+
+Time: 38
+				Finished: 16
+   Current staff: 45
+
+Time: 44
+				Finished: 18
+				Starting: 21
+   Current staff: 46
+
+Time: 46
+				Finished: 23
+				Starting: 26
+   Current staff: 48
+
+Time: 48
+				Finished: 17
+				Finished: 15
+				Starting: 22
+   Current staff: 29
+
+Time: 51
+				Finished: 13
+				Starting: 8
+   Current staff: 24
+
+Time: 59
+				Finished: 21
+				Starting: 24
+   Current staff: 26
+
+Time: 63
+				Finished: 8
+				Starting: 3
+   Current staff: 29
+
+Time: 64
+				Finished: 3
+				Finished: 22
+				Starting: 25
+   Current staff: 21
+
+Time: 66
+				Finished: 26
+   Current staff: 14
+
+Time: 119
+				Finished: 24
+				Starting: 4
+   Current staff: 13
+
+Time: 124
+				Finished: 25
+				Starting: 5
+				Starting: 27
+   Current staff: 22
+
+Time: 134
+				Finished: 4
+   Current staff: 16
+
+Time: 136
+				Finished: 5
+   Current staff: 10
+
+Time: 149
+				Finished: 27
+				Starting: 28
+				Starting: 29
+   Current staff: 20
+
+Time: 179
+				Finished: 28
+   Current staff: 10
+
+Time: 186
+				Finished: 29
+				Starting: 1
+				Starting: 6
+				Starting: 7
+				Starting: 30
+   Current staff: 29
+
+Time: 204
+				Finished: 7
+   Current staff: 23
+
+Time: 206
+				Finished: 1
+				Finished: 30
+				Starting: 31
+   Current staff: 13
+
+Time: 213
+				Finished: 6
+   Current staff: 7
+
+Time: 218
+				Finished: 31
+   Current staff: 0
+
+**** Shortest possible project execution is 218 ****
+
+ID:1 Name:Install-pavement
+Time:20
+Manpower:10
+Es:186 Ef:206
+Ls:198 Lf:218
+Slack:12
+Out edges:[]
+
+
+ID:2 Name:Install-railing
+Time:7
+Manpower:10
+Es:5 Ef:12
+Ls:211 Lf:218
+Slack:206
+Out edges:[]
+
+
+ID:3 Name:Install-ticketmachine
+Time:1
+Manpower:10
+Es:63 Ef:64
+Ls:217 Lf:218
+Slack:154
+Out edges:[]
+
+
+ID:4 Name:Paint-tower-1-with-arch
+Time:15
+Manpower:6
+Es:119 Ef:134
+Ls:203 Lf:218
+Slack:84
+Out edges:[]
+
+
+ID:5 Name:Paint-tower-2
+Time:12
+Manpower:6
+Es:124 Ef:136
+Ls:206 Lf:218
+Slack:82
+Out edges:[]
+
+
+ID:6 Name:Paint-trusses
+Time:27
+Manpower:6
+Es:186 Ef:213
+Ls:191 Lf:218
+Slack:5
+Out edges:[]
+
+
+ID:7 Name:Paint-cables-and-rods
+Time:18
+Manpower:6
+Es:186 Ef:204
+Ls:200 Lf:218
+Slack:14
+Out edges:[]
+
+
+ID:8 Name:Put-lane-tunnel-and-intersection
+Time:12
+Manpower:7
+Es:51 Ef:63
+Ls:194 Lf:206
+Slack:143
+Out edges:[3, 31]
+
+
+ID:9 Name:Setup-barrack
+Time:3
+Manpower:10
+Es:0 Ef:3
+Ls:0 Lf:3
+Slack:0
+Out edges:[10, 11, 12, 14, 16, 17]
+
+
+ID:10 Name:Prepare-storage
+Time:2
+Manpower:4
+Es:3 Ef:5
+Ls:209 Lf:211
+Slack:206
+Out edges:[2]
+
+
+ID:11 Name:Rig-ramspace-reinforcing
+Time:1
+Manpower:4
+Es:3 Ef:4
+Ls:143 Lf:144
+Slack:140
+Out edges:[18, 19, 20]
+
+
+ID:12 Name:Build-tunnel
+Time:30
+Manpower:12
+Es:3 Ef:33
+Ls:146 Lf:176
+Slack:143
+Out edges:[13]
+
+
+ID:13 Name:Clean-tunnel
+Time:18
+Manpower:12
+Es:33 Ef:51
+Ls:176 Lf:194
+Slack:143
+Out edges:[8]
+
+
+ID:14 Name:Build-intersection
+Time:25
+Manpower:12
+Es:3 Ef:28
+Ls:149 Lf:174
+Slack:146
+Out edges:[15]
+
+
+ID:15 Name:Clean-intersection
+Time:20
+Manpower:12
+Es:28 Ef:48
+Ls:174 Lf:194
+Slack:146
+Out edges:[8]
+
+
+ID:16 Name:Build-towerfoundation-1
+Time:35
+Manpower:12
+Es:3 Ef:38
+Ls:14 Lf:49
+Slack:11
+Out edges:[21]
+
+
+ID:17 Name:Build-towerfoundation-2
+Time:45
+Manpower:12
+Es:3 Ef:48
+Ls:3 Lf:48
+Slack:0
+Out edges:[22]
+
+
+ID:18 Name:Make-armouring-tower-1
+Time:40
+Manpower:4
+Es:4 Ef:44
+Ls:9 Lf:49
+Slack:5
+Out edges:[21]
+
+
+ID:19 Name:Make-armouring-tower-2
+Time:25
+Manpower:4
+Es:4 Ef:29
+Ls:23 Lf:48
+Slack:19
+Out edges:[22]
+
+
+ID:20 Name:Make-armouring-arch
+Time:12
+Manpower:4
+Es:4 Ef:16
+Ls:144 Lf:156
+Slack:140
+Out edges:[23]
+
+
+ID:21 Name:Encase-and-armour-tower-1
+Time:15
+Manpower:5
+Es:44 Ef:59
+Ls:49 Lf:64
+Slack:5
+Out edges:[24]
+
+
+ID:22 Name:Encase-and-armour-tower-2
+Time:16
+Manpower:5
+Es:48 Ef:64
+Ls:48 Lf:64
+Slack:0
+Out edges:[25]
+
+
+ID:23 Name:Encase-and-armour-arch
+Time:30
+Manpower:5
+Es:16 Ef:46
+Ls:156 Lf:186
+Slack:140
+Out edges:[26]
+
+
+ID:24 Name:Cast-tower-1
+Time:60
+Manpower:7
+Es:59 Ef:119
+Ls:64 Lf:124
+Slack:5
+Out edges:[4, 27]
+
+
+ID:25 Name:Cast-tower-2
+Time:60
+Manpower:7
+Es:64 Ef:124
+Ls:64 Lf:124
+Slack:0
+Out edges:[5, 27]
+
+
+ID:26 Name:Cast-arch
+Time:20
+Manpower:7
+Es:46 Ef:66
+Ls:186 Lf:206
+Slack:140
+Out edges:[31]
+
+
+ID:27 Name:Stretch-two-maincables
+Time:25
+Manpower:10
+Es:124 Ef:149
+Ls:124 Lf:149
+Slack:0
+Out edges:[28, 29]
+
+
+ID:28 Name:Build-truss-1-with-rods
+Time:30
+Manpower:10
+Es:149 Ef:179
+Ls:156 Lf:186
+Slack:7
+Out edges:[1, 6, 7, 30]
+
+
+ID:29 Name:Build-truss-2-with-rods
+Time:37
+Manpower:10
+Es:149 Ef:186
+Ls:149 Lf:186
+Slack:0
+Out edges:[1, 6, 7, 30]
+
+
+ID:30 Name:Cast-lane-on-truss
+Time:20
+Manpower:7
+Es:186 Ef:206
+Ls:186 Lf:206
+Slack:0
+Out edges:[31]
+
+
+ID:31 Name:Polish-lane-on-arch
+Time:12
+Manpower:7
+Es:206 Ef:218
+Ls:206 Lf:218
+Slack:0
+Out edges:[]

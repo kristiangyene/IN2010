@@ -1,0 +1,23 @@
+1. What is the time complexity of your solution? You must explain the stated complexity.
+If you have a different complexity for each problem, you need to discuss
+them separately.
+Har forskjellig kompleksitet i de forskjellige metodene. Grafalgoritmen for
+topologisk sortering har tid O(|V|+|E|) fordi stakkoperasjonen tar konstant tid og
+hver kant og hver node bare blir behandlet en gang. Metoden for å finne cycle
+tar også tid O(|V|+|E|) fordi DFS traversering tar O(|V|+|E|) med nabo-liste
+implementasjonNoen.Metodene som bare går igjennom tasks en gang har tid O(n), og noen
+går igjennom tasks og tasks sine naboer som tar tid O(n^2).
+
+
+2. What requirements are there for the input graph in order for the project to be
+successfully planned? Please put the discussion in the light of graf theoretical properties.
+Det er viktig at:
+-Alle tasks har samme format og krav.
+-Det grafen ikke inneholder en cycle.
+-At grafen er sammenhengende. 
+
+
+3. What kind of the graph algorithms did you use in your implementation?
+Har brukt dybde-først søk for å finne cycle. Algoritme for å finne topologisk sortering.
+Algoritme for å finne earliestStart og earliestFinish. Samme algoritme med
+latestStart og latestFinish bare motsatt vei.

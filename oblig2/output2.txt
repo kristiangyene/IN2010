@@ -1,0 +1,76 @@
+Listing : buildhouse2.txt
+
+CYCLE FOUND: [1, 2, 6, 7, 1]
+
+ID:1 Name:Build-walls
+Time:4
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[2, 3]
+
+
+ID:2 Name:Build-roofs
+Time:6
+Manpower:4
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[3, 4, 7]
+
+
+ID:3 Name:Put-on-wallpapers
+Time:1
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[8]
+
+
+ID:4 Name:Put-on-tiles
+Time:1
+Manpower:3
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[]
+
+
+ID:5 Name:Build-foundation
+Time:4
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[1]
+
+
+ID:6 Name:Make-floor
+Time:2
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[1]
+
+
+ID:7 Name:Put-carpet-floor
+Time:4
+Manpower:2
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[6, 8]
+
+
+ID:8 Name:Move-in
+Time:4
+Manpower:4
+Es:0 Ef:0
+Ls:0 Lf:0
+Slack:0
+Out edges:[]
+
+
